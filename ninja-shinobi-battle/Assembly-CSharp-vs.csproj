@@ -48,14 +48,15 @@
   <ItemGroup>
      <Compile Include="Assets\Script\BombButtonScript.cs" />
      <Compile Include="Assets\Script\ClickWepon.cs" />
+     <Compile Include="Assets\Script\Ending.cs" />
      <Compile Include="Assets\Script\GameInformation.cs" />
      <Compile Include="Assets\Script\Nokori.cs" />
      <Compile Include="Assets\Script\ShurikenButtonScript.cs" />
+     <Compile Include="Assets\Script\StageCounter.cs" />
+     <Compile Include="Assets\Script\TitleManager.cs" />
      <Compile Include="Assets\Script\WeaponChange.cs" />
      <Compile Include="Assets\Script\test\ClickTest.cs" />
      <Compile Include="Assets\Script\test\test.cs" />
-     <Compile Include="Assets\mouri\Scripts\Ending.cs" />
-     <Compile Include="Assets\mouri\Scripts\TitleManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

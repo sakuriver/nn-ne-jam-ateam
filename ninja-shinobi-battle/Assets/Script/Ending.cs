@@ -62,7 +62,7 @@ public class Ending : MonoBehaviour {
     void Story()
     {
         StoryTime += Time.deltaTime;
-        if (StoryTime >= 12.0f)
+        if (StoryTime >= 22.0f)
         {
             gStory.SetActive(false);
             StartButton.SetActive(true);
