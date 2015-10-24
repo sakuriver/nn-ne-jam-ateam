@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\GameInformation.cs" />
      <Compile Include="Assets\Script\Nokori.cs" />
      <Compile Include="Assets\Script\ShurikenButtonScript.cs" />
+     <Compile Include="Assets\Script\StageCounter.cs" />
      <Compile Include="Assets\Script\WeaponChange.cs" />
      <Compile Include="Assets\Script\test\ClickTest.cs" />
      <Compile Include="Assets\Script\test\test.cs" />

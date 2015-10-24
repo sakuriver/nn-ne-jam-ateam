@@ -9,8 +9,20 @@ public class GameInformation : MonoBehaviour {
 	public int selectWeapon = 0;
 	public int enemyCreateCount = 0;
 	void Start() {
+		for (int i = 0; i < 5; i++) {
+			// プレハブを取得
+			GameObject prefab;
+			if (Random.value * 5 > 2) {
+				prefab = (GameObject)Resources.Load ("Prefab/Friend1");
+			} else {
+				prefab = (GameObject)Resources.Load ("Prefab/Friend2");
+			} 
+			Vector3 position = new Vector3 ((Random.value * 8) - (Random.value * 8), (Random.value * 4) - (Random.value * 4), 10);
+			// プレハブからインスタンスを生成
+			Instantiate (prefab, position, Quaternion.identity);
+		}
 	}
-
+	
 	public void Update() {
 		if (enemyCreateCount > 70) {
 			// プレハブを取得
@@ -18,9 +30,17 @@ public class GameInformation : MonoBehaviour {
 			Vector3 position = new Vector3 ((Random.value * 8) - (Random.value * 8), (Random.value * 4) - (Random.value * 4), -10);
 			// プレハブからインスタンスを生成
 			Instantiate (prefab, position, Quaternion.identity);
-			Debug.Log ("enemy create complete");
 			enemyCreateCount=0;
 		}
+
+		if (Input.GetMouseButton (0)) {
+			if (this.selectWeapon == GameInformation.WEAPON_CODE_SHURIKEN) {
+
+			} else {
+
+			}
+		}
+		//GameObject.Find ("EnmyNumber").GetComponent<GUIText> ().text = GameObject.FindGameObjectsWithTag("enemy").Length.ToString();	
 		enemyCreateCount++;
 	}
 
