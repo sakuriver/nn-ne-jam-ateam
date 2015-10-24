@@ -5,10 +5,18 @@ public class GameInformation : MonoBehaviour {
 
 	public static int WEAPON_CODE_SHURIKEN = 0;
 	public static int WEAPON_CODE_BOMB = 1;
+	public AudioClip selectAudioClip;
 
 	public int selectWeapon = 0;
 	public int enemyCreateCount = 0;
+
+	private AudioSource audioSource; 
+
 	void Start() {
+
+		audioSource = GameObject.Find ("SceneManager").GetComponent<AudioSource> ();
+		audioSource.clip = selectAudioClip;
+
 		for (int i = 0; i < 5; i++) {
 			// プレハブを取得
 			GameObject prefab;
@@ -34,6 +42,7 @@ public class GameInformation : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButton (0)) {
+			SelectClipPlay();
 			if (this.selectWeapon == GameInformation.WEAPON_CODE_SHURIKEN) {
 
 			} else {
@@ -42,6 +51,10 @@ public class GameInformation : MonoBehaviour {
 		}
 		//GameObject.Find ("EnmyNumber").GetComponent<GUIText> ().text = GameObject.FindGameObjectsWithTag("enemy").Length.ToString();	
 		enemyCreateCount++;
+	}
+
+	public void SelectClipPlay() {
+		audioSource.Play();
 	}
 
 }

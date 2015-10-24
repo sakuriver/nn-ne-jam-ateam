@@ -2,12 +2,15 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GameInformation.cs">
     <Files>
-      <File FileName="Assets\Script\GameInformation.cs" Line="44" Column="5" />
+      <File FileName="Assets\Script\GameInformation.cs" Line="43" Column="10" />
       <File FileName="Assets\Script\ShurikenButtonScript.cs" Line="7" Column="15" />
       <File FileName="Assets\Script\BombButtonScript.cs" Line="8" Column="76" />
       <File FileName="Assets\Script\test\test.cs" Line="13" Column="12" />
       <File FileName="Assets\Script\WeaponChange.cs" Line="35" Column="83" />
       <File FileName="Assets\Script\ClickWepon.cs" Line="21" Column="39" />
+      <File FileName="Assets\mouri\Scripts\TitleManager.cs" Line="59" Column="21" />
+      <File FileName="Assets\mouri\Scripts\Ending.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\StageCounter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

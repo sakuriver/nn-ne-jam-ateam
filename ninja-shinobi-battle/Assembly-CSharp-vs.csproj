@@ -53,10 +53,7 @@
      <Compile Include="Assets\Script\Nokori.cs" />
      <Compile Include="Assets\Script\ShurikenButtonScript.cs" />
      <Compile Include="Assets\Script\StageCounter.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Script\TitleManager.cs" />
-=======
->>>>>>> e8ca1c315329c58fc983f4dc01a955084e426d91
      <Compile Include="Assets\Script\WeaponChange.cs" />
      <Compile Include="Assets\Script\test\ClickTest.cs" />
      <Compile Include="Assets\Script\test\test.cs" />

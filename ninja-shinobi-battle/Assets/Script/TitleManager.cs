@@ -37,18 +37,22 @@ public class TitleManager : MonoBehaviour {
             Fade.GetComponent<Image>().color += new Color(0.0f, 0.0f, 0.0f, -0.001f);
         }
         //alphaが0になったら止める
-            if (Fade.GetComponent<Image>().color.a <= 0.1f){
-                    FadeInFlg = false;       
-            }
+        if (Fade.GetComponent<Image>().color.a <= 0.1f){
+	        FadeInFlg = false;       
+	    }
     }    
     //ステージ切り替え
     public void SceneChange(){
+		bool prevFadeOutFlg = FadeOutFlg;
         FadeOutFlg = true;
         //フェードアウトしてシーンを切り替える
         Fade.GetComponent<Image>().color += new Color(0.0f, 0.0f, 0.0f, 0.01f);
-            if (Fade.GetComponent<Image>().color.a >= 0.9f){
-                Application.LoadLevel("MainScene");
-            }
+        if (Fade.GetComponent<Image> ().color.a >= 0.9f) {
+			Application.LoadLevel ("MainScene");
+		} 
+		if (!prevFadeOutFlg && FadeOutFlg) {
+			GameObject.Find ("StartButton").GetComponent<AudioSource> ().Play ();
+		}
     }
     //ストーリー関連
     void Story(){
