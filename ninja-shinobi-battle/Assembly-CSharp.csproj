@@ -45,6 +45,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AbeKeita\Script\ClickWepon.cs" />
+     <Compile Include="Assets\AbeKeita\Script\Nokori.cs" />
+     <Compile Include="Assets\AbeKeita\Script\WeaponChange.cs" />
+     <Compile Include="Assets\AbeKeita\Script\test\ClickTest.cs" />
+     <Compile Include="Assets\AbeKeita\Script\test\test.cs" />
      <Compile Include="Assets\Script\BombButtonScript.cs" />
      <Compile Include="Assets\Script\GameInformation.cs" />
      <Compile Include="Assets\Script\ShurikenButtonScript.cs" />
